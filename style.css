@@ -1,0 +1,119 @@
+/* ===== RESET & BASE STYLES ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #00ffb3;
+  color: #00ffb3;
+  font-family: 'Courier New', monospace;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: radial-gradient(circle, #25aaa1 0%, #000000 100%);
+  text-shadow: 0 0 2px #ffffff;
+  overflow: hidden;
+}
+
+/* ===== CONTAINER ===== */
+.container {
+  background-color: rgb(0, 0, 0);
+  border: 1px solid #00ffb7;
+  border-radius: 10px;
+  padding: 40px 30px;
+  box-shadow: 0 0 20px #00ffd5aa;
+  text-align: center;
+  max-width: 600px;
+  animation: fadeIn 2s ease-in-out;
+}
+
+/* ===== TITLE ===== */
+h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #00ffb3;
+  text-shadow: 0 0 10px #00ffb3;
+}
+
+.glow {
+  color: #00ffb3;
+  text-shadow: 0 0 5px #00ffb3, 0 0 15px #00ffb3, 0 0 30px #00ffb3;
+}
+
+/* ===== PARAGRAPH ===== */
+p {
+  font-size: 16px;
+  color: #2bda65;
+  margin-bottom: 30px;
+  line-height: 1.7;
+  animation: textGlow 2s ease-in-out infinite alternate;
+}
+
+/* ===== BUTTON ===== */
+.enter-button {
+  display: inline-block;
+  background-color: #2be371;
+  color: #ffffff;
+  padding: 12px 28px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.4s ease;
+  box-shadow: 0 0 10px #000000, 0 0 20px #000000;
+}
+
+.enter-button:hover {
+  background-color: #001100;
+  color: #00ffaa;
+  box-shadow: 0 0 15px #00ffb3, 0 0 25px #00ffa2;
+  transform: scale(1.05);
+}
+
+/* ===== FOOTER ===== */
+footer {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+  color: #444;
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+
+/* ===== ANIMATIONS ===== */
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(50px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes textGlow {
+  0% { text-shadow: 0 0 5px #02bc53; }
+  100% { text-shadow: 0 0 20px #02bc53, 0 0 30px #02bc53; }
+}
+
+/* ===== SCROLLBAR HIDE ===== */
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+/* ===== CUSTOM CODE BLOCK (OPTIONAL) ===== */
+code {
+  display: block;
+  background-color: #111;
+  padding: 10px;
+  margin-top: 20px;
+  border: 1px solid #02bc53;
+  border-radius: 4px;
+  color: #02bc53;
+  font-size: 14px;
+  overflow-x: auto;
+}
